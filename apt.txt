@@ -2,3 +2,4 @@ fuse
 rclone
 libfuse-dev
 libfuse2
+curl
