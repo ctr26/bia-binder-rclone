@@ -1,4 +1,5 @@
 fuse
+sudo
 rclone
 libfuse-dev
 libfuse2
