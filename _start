@@ -1,4 +1,5 @@
-nohup rclone mount biostudies:biostudies/nfs ~/biostudies -vv > rclone.log &
+# nohup rclone mount biostudies:biostudies/nfs ~/biostudies -vv > rclone.log &
+rclone mount biostudies:biostudies/nfs ~/biostudies --daemon
 exec "$@"
 
 # https://discourse.jupyter.org/t/storage-capacity-is-not-respected-by-hub/8080/2
