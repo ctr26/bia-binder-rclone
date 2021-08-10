@@ -1,0 +1,16 @@
+# name: base
+channels:
+  - conda-forge
+  - anaconda
+dependencies:
+  - pip
+  - python
+  - rclone
+  - libfuse
+  # - pip:
+  #   - jupyterlab-git
+  #   - -r file:requirements.txt
+# jupyterlab_play_cell_button
+# jlab-enhanced-cell-toolbar
+# imjoy-jupyter-extension
+
