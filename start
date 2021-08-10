@@ -1,2 +1,0 @@
-nohup rclone mount biostudies:biostudies/nfs ~/biostudies -vv > rclone.log &
-exec "$@"
