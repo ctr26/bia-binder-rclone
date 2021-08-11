@@ -1,5 +1,7 @@
 #!/bin/bash
 mkdir ~/biostudies
+echo 'nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon > rclone.log &' >> ~/.bashrc 
+
 exec "$@"
 
 # https://discourse.jupyter.org/t/storage-capacity-is-not-respected-by-hub/8080/2
