@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir ~/biostudies
 nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon ;
 exec "$@"
