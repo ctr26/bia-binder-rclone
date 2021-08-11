@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir ~/biostudies
 echo 'nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon > rclone.log &' >> ~/.bashrc 
-nohup clone mount biostudies:biostudies/nfs ~/biostudies --daemon </dev/null >/dev/null 2>&1 &
+nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon </dev/null >/dev/null 2>&1 &
 exec "$@"
 
 # https://discourse.jupyter.org/t/storage-capacity-is-not-respected-by-hub/8080/2
