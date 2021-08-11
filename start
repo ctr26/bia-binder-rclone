@@ -1,0 +1,6 @@
+mkdir ~/biostudies
+nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon &
+# screen -d -m bash -c "rclone mount biostudies:biostudies/nfs ~/biostudies --daemon -vv"
+exec "$@"
+
+# https://discourse.jupyter.org/t/storage-capacity-is-not-respected-by-hub/8080/2
