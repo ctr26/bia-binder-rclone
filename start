@@ -2,6 +2,12 @@
 mkdir ~/biostudies
 # echo 'nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon > rclone.log &' >> ~/.bashrc 
 nohup rclone mount biostudies:biostudies/nfs ~/biostudies --read-only --daemon </dev/null >/dev/null 2>&1 &
+
+mkdir ~/fg_bioimage
+
+nohup rclone mount fg_bioimage: ~/fg_bioimage --read-only --daemon </dev/null >/dev/null 2>&1 &
+
+fg_bioimage
 exec "$@"
 
 # https://discourse.jupyter.org/t/storage-capacity-is-not-respected-by-hub/8080/2
