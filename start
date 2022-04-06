@@ -1,7 +1,7 @@
 #!/bin/bash
-mkdir ~/biostudies
+mkdir ~/biostudies_ftp
 # echo 'nohup rclone mount biostudies:biostudies/nfs ~/biostudies --daemon > rclone.log &' >> ~/.bashrc 
-nohup rclone mount biostudies:biostudies/nfs ~/biostudies --read-only --daemon </dev/null >/dev/null 2>&1 &
+nohup rclone mount biostudies:biostudies/nfs ~/biostudies_ftp --read-only --daemon </dev/null >/dev/null 2>&1 &
 
 mkdir ~/fg_bioimage
 nohup rclone mount fg_bioimage: ~/fg_bioimage --read-only --daemon </dev/null >/dev/null 2>&1 &
